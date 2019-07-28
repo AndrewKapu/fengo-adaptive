@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .container {
+    width: 280px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px;
+  }
+}
+
+.header__top-panel {
+  height: 27px;
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__top-panel-inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__top-nav {
+    margin: 0 -15px;
+  }
+}
+
+.header__menu-person {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu-settings {
+  margin-top: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__menu-settings {
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .header__link-wrapper_wider-only {
+    display: none;
+  }
+}
+
+.header__top-nav-link {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+  text-decoration: none;
+  line-height: 0.6rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__top-nav-link {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__searce-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 34px;
+  }
+}
+
+.header__authorise {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__authorise_wider-only {
+    display: none;
+  }
+}
+
+.header__authorise-span {
+  margin: 0 8px;
+}
+
+.header__form {
+  position: relative;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__form {
+    margin-top: 0;
+  }
+}
+
+.header__form-submit {
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.header__input {
+  height: 38px;
+  width: 280px;
+  padding: 12px 26px 12px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+  text-decoration: none;
+  line-height: 0.6rem;
+}
+
+.header__input::-webkit-input-placeholder {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.header__input::-moz-placeholder {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.header__input:-moz-placeholder {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.header__input:-ms-input-placeholder {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+
+.header__drop-down-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__main-nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #565656;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+
+.header__main-nav-link_heading {
+  font-size: 16px;
+}
+
+.header__drop-down-mobile-nav-icon {
+  margin-right: 10px;
+}
+
+.header__drop-down-mobile {
+  padding: 26px 0;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header__drop-down-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1170px) {
+  .header__drop-down-mobile {
+    display: none;
+  }
+}
+
+.header__drop-down-mobile-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__drop-down-mobile-cart-price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #565656;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 9px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .header__main-nav {
+    display: none;
+  }
+}
+
+.header__main-nav-menu {
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 48px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .logo {
+    margin-top: 0;
+  }
+}
+
+.logo__heading {
+  margin-left: 11px;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #454545;
+  -webkit-text-decoration: 2.4rem;
+          text-decoration: 2.4rem;
+  text-transform: uppercase;
+}
+
+.arrow-down {
+  font-size: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+.header {
+    &__top-panel {
+        height: 27px;
+        background-color: $bg-gray1;
+    }
+
+    &__top-panel-inside {
+        @include breakpoint(sm) {
+            @include flex-positioning(space-between);
+        }
+    }
+
+    &__top-nav {
+        @include breakpoint(sm) {
+            margin: 0 -15px;
+        }
+    }
+
+    &__menu-person {
+        padding-top: 10px;
+        @include flex-positioning(space-between, center);
+    }
+
+    &__menu-settings {
+        margin-top: 19px;
+        @include flex-positioning(space-around, center);
+
+        @include breakpoint(sm) {
+            margin: 0;
+            padding-top: 10px;
+        }
+    }
+
+    &__link-wrapper {
+
+        &_wider-only {
+            @include breakpoint(xs) {
+                display: none;
+            }
+        }
+    }
+
+    &__top-nav-link {
+        display: block;
+        @include text(0.6875rem, 400, $t-gray1, none, 0.6rem, uppercase);
+
+        @include breakpoint(sm) {
+            margin: 0 15px;
+        }
+    }
+
+    &__searce-logo {
+        @include breakpoint(sm) {
+            @include flex-positioning(space-between, center);
+            margin-top: 34px;
+        }
+    }
+
+    &__arrow-down {}
+
+    &__authorise {
+        margin-top: 20px;
+        @include flex-positioning(center);
+
+        &_wider-only {
+            @include breakpoint(sm) {
+                display: none;
+            }
+        }
+    }
+
+    &__authorise-span {
+        margin: 0 8px;
+    }
+
+    &__form {
+        position: relative;
+        margin-top: 24px;
+
+        @include breakpoint(sm) {
+            margin-top: 0;
+        }
+    }
+
+    &__form-submit {
+        position: absolute;
+        top: 9px;
+        right: 0;
+    }
+
+    &__input {
+        height: 38px;
+        width: 280px;
+        padding: 12px 26px 12px 12px;
+        box-sizing: border-box;
+        border: 1px solid $gray2;
+        @include text(0.6875rem, 400, $t-gray1, none, 0.6rem);
+        @include placeholder(0.6875rem, 400, $t-gray1);
+    }
+
+    &__drop-down-mobile {
+        @include flex-positioning(space-between, center);
+    }
+
+
+    &__main-nav-link {
+        @include text(14px, 700, $t-dark2, none, null, uppercase);
+        padding-bottom: 18px;
+
+        &_heading {
+            font-size: 16px;
+        }
+    }
+
+    &__drop-down-mobile-nav-icon {
+        margin-right: 10px;
+    }
+
+    &__drop-down-mobile {
+        padding: 26px 0;
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(lg) {
+            display: none;
+        }
+    }
+
+    &__drop-down-mobile-cart {
+        @include flex-positioning(center, center);
+    }
+
+    &__drop-down-mobile-cart-price {
+        @include text(16px, 400, $t-dark2, none, null, uppercase);
+        margin-left: 9px;
+    }
+
+    &__main-nav {
+        @include breakpoint(xs) {
+            display: none;
+        }
+    }
+
+    &__main-nav-menu {
+        margin-top: 34px;
+        @include flex-positioning(space-between);
+    }
+}
+
+.logo {
+    text-decoration: none;
+    @include flex-positioning(center);
+    margin-top: 48px;
+
+    @include breakpoint(sm) {
+        margin-top: 0;
+    }
+
+    &__img {}
+
+    &__heading {
+        margin-left: 11px;
+        @include text(2.75rem, 700, $t-dark1, 2.4rem, $t-transform: uppercase);
+    }
+}
+
+.arrow-down {
+    font-size: 0.5rem;
+}
