@@ -1,0 +1,129 @@
+.deal-name {
+    @include text(1.625rem, 700, $white, null, null, uppercase, null);
+}
+
+.arrow-right {}
+
+.slider-btns {
+    align-self: center;
+}
+
+.slider-btn {
+    position: absolute;
+    @include flex-positioning(center, center);
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    border: 3px solid $white;
+    text-decoration: none;
+    @include text(18px, $color: $white);
+
+    &:first-child {
+        left: 25px;
+        transform: rotate(180deg);
+    }
+
+    &:last-child {
+        right: 25px;
+    }
+
+    @include hover1;
+}
+
+// Slider-pagination
+
+.slider-pagination {
+    display: none;
+}
+
+.more-btn {
+    display: block;
+    @include flex-positioning(null, center);
+    @include text(0.875rem, 700, $t-dark3, none, null, uppercase);
+
+    &__arrow-right {
+        font-size: 0.6875rem;
+        margin-left: 4px;
+        margin-top: -1px;
+    }
+
+    @include hover2;
+}
+
+.slider-wrapper {
+    display: none;
+    background-color: $bg-gray2;
+    position: relative;
+}
+
+.slider {
+    margin-top: 19px;
+    @include flex-positioning(null, center);
+    flex-wrap: wrap;
+    align-content: center;
+
+    &__text {}
+
+    &__text-h2 {
+        @include text(4.6875rem, 700, $white, null, null, uppercase, null);
+        margin: 16px 0;
+    }
+
+    &__deal-name {
+        color: $t-dark4;
+    }
+
+}
+
+
+@include breakpoint(sm) {
+    .slider-wrapper {
+        display: block;
+    }
+
+    .slider {
+        height: 428px;                
+
+        &__text {
+            margin-left: auto;
+            width: 340px;
+        }
+
+        &__more-btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+@include breakpoint(lg) {
+    .slider {
+        height: 1070px;
+
+        &__text {
+            width: 340px;
+        }
+    }
+
+    .slider-pagination {
+        @include flex-positioning(center);
+        width: 100%;
+
+        &__menu {
+            @include flex-positioning();
+            position: absolute;
+            bottom: 22px;
+            margin: 0 -7px;
+        }
+
+        &__link {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid $white;
+            border-radius: 7px;
+            margin: 0 7px;
+
+            @include hover1;
+        }
+    }
+}

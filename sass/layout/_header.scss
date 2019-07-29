@@ -1,20 +1,27 @@
+// Mobile first
+
+.logo {
+    text-decoration: none;
+    @include flex-positioning(center);
+    margin-top: 48px;
+
+    &__img {}
+
+    &__heading {
+        margin-left: 11px;
+        @include text(2.75rem, 700, $t-dark1, 2.4rem, $t-transform: uppercase);
+    }
+}
+
 .header {
     &__top-panel {
         height: 27px;
         background-color: $bg-gray1;
     }
 
-    &__top-panel-inside {
-        @include breakpoint(sm) {
-            @include flex-positioning(space-between);
-        }
-    }
+    &__top-panel-inside {}
 
-    &__top-nav {
-        @include breakpoint(sm) {
-            margin: 0 -15px;
-        }
-    }
+    &__top-nav {}
 
     &__menu-person {
         padding-top: 10px;
@@ -24,19 +31,20 @@
     &__menu-settings {
         margin-top: 19px;
         @include flex-positioning(space-around, center);
-
-        @include breakpoint(sm) {
-            margin: 0;
-            padding-top: 10px;
-        }
     }
 
     &__link-wrapper {
 
+        &_sm-only {
+            display: none;
+        }
+
         &_wider-only {
-            @include breakpoint(xs) {
-                display: none;
-            }
+            display: none;
+        }
+
+        &_lg-only {
+            display: none;
         }
     }
 
@@ -44,29 +52,16 @@
         display: block;
         @include text(0.6875rem, 400, $t-gray1, none, 0.6rem, uppercase);
 
-        @include breakpoint(sm) {
-            margin: 0 15px;
-        }
+        @include hover2;
     }
 
-    &__searce-logo {
-        @include breakpoint(sm) {
-            @include flex-positioning(space-between, center);
-            margin-top: 34px;
-        }
-    }
+    &__search-logo {}
 
     &__arrow-down {}
 
     &__authorise {
         margin-top: 20px;
         @include flex-positioning(center);
-
-        &_wider-only {
-            @include breakpoint(sm) {
-                display: none;
-            }
-        }
     }
 
     &__authorise-span {
@@ -76,16 +71,14 @@
     &__form {
         position: relative;
         margin-top: 24px;
-
-        @include breakpoint(sm) {
-            margin-top: 0;
-        }
     }
 
     &__form-submit {
         position: absolute;
         top: 9px;
-        right: 0;
+        right: 2px;
+        border: none;
+        background-color: transparent;
     }
 
     &__input {
@@ -110,6 +103,7 @@
         &_heading {
             font-size: 16px;
         }
+        @include hover2;
     }
 
     &__drop-down-mobile-nav-icon {
@@ -118,14 +112,6 @@
 
     &__drop-down-mobile {
         padding: 26px 0;
-
-        @include breakpoint(sm) {
-            display: none;
-        }
-
-        @include breakpoint(lg) {
-            display: none;
-        }
     }
 
     &__drop-down-mobile-cart {
@@ -138,34 +124,125 @@
     }
 
     &__main-nav {
-        @include breakpoint(xs) {
-            display: none;
-        }
+        display: none;
     }
 
     &__main-nav-menu {
         margin-top: 34px;
         @include flex-positioning(space-between);
     }
-}
 
-.logo {
-    text-decoration: none;
-    @include flex-positioning(center);
-    margin-top: 48px;
-
-    @include breakpoint(sm) {
-        margin-top: 0;
-    }
-
-    &__img {}
-
-    &__heading {
-        margin-left: 11px;
-        @include text(2.75rem, 700, $t-dark1, 2.4rem, $t-transform: uppercase);
+    &__main-nav-logo {
+        display: none;
     }
 }
+
+
 
 .arrow-down {
     font-size: 0.5rem;
+}
+
+// Tablet
+@include breakpoint(sm) {
+    .header {
+
+        &__top-panel-inside {
+            @include flex-positioning(space-between);
+        }
+
+        &__top-nav {
+            margin: 0 -15px;
+        }
+
+        &__menu-settings {
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        &__link-wrapper {
+
+            &_sm-only {
+                display: block;
+            }
+
+            &_wider-only {
+                display: block;
+            }
+        }
+
+        &__top-nav-link {
+            margin: 0 15px;
+        }
+
+        &__search-logo {
+            @include flex-positioning(space-between, center);
+            margin-top: 34px;
+        }
+
+        &__authorise {
+
+            &_wider-only {
+                display: none;
+            }
+        }
+
+        &__form {
+            margin-top: 0;
+        }
+
+        &__drop-down-mobile {
+            display: none;
+        }
+
+        &__main-nav {
+            display: block;
+        }
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+}
+
+@include breakpoint(lg) {
+    .logo {
+        display: none;
+    }
+
+    .header {
+
+        &__search-logo {
+            justify-content: flex-end;
+        }
+
+        &__main-nav {
+            @include flex-positioning(null, flex-end);
+        }
+
+        &__main-nav-menu {
+            margin: 0 -25px;
+        }
+
+        &__link-wrapper {
+
+            &_sm-only {
+                display: none;
+            }
+
+            &_lg-only {
+                display: block;
+            }
+        }
+
+        &__main-nav-link {
+            margin: 0 25px;
+        }
+
+        &__main-nav-logo {
+            @include flex-positioning(center);
+            margin-right: 262px;
+        }
+    }
+
 }
