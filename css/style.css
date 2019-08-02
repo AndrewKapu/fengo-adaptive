@@ -382,10 +382,23 @@ body {
   text-transform: uppercase;
 }
 
+.arrow-right {
+  display: inline-block;
+  font-size: 0.6875rem;
+  margin-left: 4px;
+}
+
 .slider-btns {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.main-h2 {
+  font-size: 4.6875rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .slider-btn {
@@ -423,12 +436,7 @@ body {
   color: #454545;
 }
 
-.slider-pagination {
-  display: none;
-}
-
 .more-btn {
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,13 +445,12 @@ body {
           align-items: center;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #333333;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .more-btn__arrow-right {
-  font-size: 0.6875rem;
   margin-left: 4px;
   margin-top: -1px;
 }
@@ -472,16 +479,217 @@ body {
       align-content: center;
 }
 
-.slider__text-h2 {
-  font-size: 4.6875rem;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
+.slider__main-h2 {
   margin: 16px 0;
 }
 
 .slider__deal-name {
   color: #555555;
+}
+
+.slider-pagination {
+  display: none;
+  width: 100%;
+}
+
+.slider-pagination__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 22px;
+  margin: 0 -7px;
+}
+
+.slider-pagination__link {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  margin: 0 7px;
+}
+
+.slider-pagination__link:hover {
+  background-color: #fff;
+  color: #454545;
+}
+
+.pay-less-wrapper {
+  background-color: #cccccc;
+}
+
+.pay-less {
+  padding: 19px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pay-less__text {
+  padding: 28px 0;
+  border: 1px solid #fff;
+}
+
+.pay-less__main-h2 {
+  font-size: 2.125rem;
+}
+
+.pay-less__deal-name {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 13px 0 18px 0;
+}
+
+.pay-less__more-btn {
+  color: #fff;
+  display: block;
+}
+
+.deals {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.deals__block-text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.deals__block-text-wrapper_block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+
+.deals__block1-text {
+  padding: 39px 26px 46px;
+  border: 1px solid #fff;
+  margin: 10px 10px 32px 10px;
+}
+
+.deals__block {
+  background-color: #cccccc;
+  text-align: center;
+  position: relative;
+}
+
+.deals__deal-name {
+  font-size: 1.3125rem;
+}
+
+.deals__deal-name_subdeal {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.deals__deal-name_block2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #555555;
+  text-transform: lowercase;
+}
+
+.deals__deal-name_dark {
+  color: #333333;
+  margin: 10px 0;
+}
+
+.deals__deal-name_dark2 {
+  color: #555555;
+}
+
+.deals__deal-name_block4 {
+  font-weight: 400;
+}
+
+.deals__deal-name_block5 {
+  font-size: 18px;
+  margin: 19px 0;
+}
+
+.deals__more-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.deals__more-btn {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+
+.deals__more-btn_block5 {
+  bottom: 51px;
+}
+
+.deals__block2-text {
+  margin: 30px 0 448px 0;
+}
+
+.deals__main-h2 {
+  font-size: 2.1875rem;
+  margin-bottom: 13px;
+}
+
+.deals__main-h2_block4 {
+  font-size: 1.5625rem;
+}
+
+.deals__main-h2_block5 {
+  font-size: 1.875rem;
+}
+
+.deals__main-h2_block6 {
+  font-size: 1.75rem;
+  margin: 83px 0;
+}
+
+.deals__block3-4-text {
+  margin: 62px 30px 69px;
+}
+
+.deals__block5 {
+  position: relative;
+}
+
+.deals__block5-text {
+  margin-top: 132px;
+  margin-bottom: 172px;
+}
+
+@media (min-width: 0px) {
+  .deals__slider-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -496,7 +704,63 @@ body {
     width: 340px;
   }
   .slider__more-btn {
+    color: #333333;
     margin-top: 20px;
+  }
+  .pay-less-wrapper {
+    display: none;
+  }
+  .deals {
+    margin-top: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 266px 154px 154px;
+        grid-template-rows: 266px 154px 154px;
+    grid-gap: 20px;
+  }
+  .deals__deal-name {
+    font-size: 0.9375rem;
+  }
+  .deals__block1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+  .deals__block1-text {
+    padding: 47px 65px;
+    margin: 0;
+  }
+  .deals__block2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+  .deals__block2-text {
+    margin: 0;
+    margin-top: 25px;
+  }
+  .deals__block3-4-text {
+    margin: 0 26px;
+  }
+  .deals__block4 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .deals__block5 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .deals__block5-text {
+    margin: 0;
+  }
+  .deals__main-h2_block6 {
+    margin: 0;
   }
 }
 
@@ -506,6 +770,9 @@ body {
   }
   .slider__text {
     width: 340px;
+  }
+  .slider__main-h2 {
+    font-size: 6.25rem;
   }
   .slider-pagination {
     display: -webkit-box;
@@ -535,6 +802,11 @@ body {
   .slider-pagination__link:hover {
     background-color: #fff;
     color: #454545;
+  }
+  .deals {
+    margin-top: 60px;
+    -ms-grid-rows: 430px 250px 250px;
+        grid-template-rows: 430px 250px 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
