@@ -45,12 +45,13 @@
 }
 
 //Стилизация placeholder
-@mixin placeholder($size: null, $weight: null, $color: null, $line-height: null) {
+@mixin placeholder($size: null, $weight: null, $color: null, $line-height: null, $t-transform: null) {
     &::-webkit-input-placeholder {
         font-size: $size;
         font-weight: $weight;
         color: $color;
         line-height: $line-height;
+        text-transform: $t-transform;
     }
 
     &::-moz-placeholder {
@@ -58,6 +59,7 @@
         line-height: $line-height;
         font-weight: $weight;
         color: $color;
+        text-transform: $t-transform;
     }
 
     &:-moz-placeholder {
@@ -65,6 +67,7 @@
         line-height: $line-height;
         font-weight: $weight;
         color: $color;
+        text-transform: $t-transform;
     }
 
     &:-ms-input-placeholder {
@@ -72,6 +75,7 @@
         line-height: $line-height;
         font-weight: $weight;
         color: $color;
+        text-transform: $t-transform;
     }
 }
 

@@ -44,7 +44,7 @@
     @include text(0.875rem, 700, $white, none, null, uppercase);
 
     &__arrow-right {
-        margin-left: 4px;
+        //margin-left: 4px;
         margin-top: -1px;
     }
 
@@ -105,7 +105,6 @@
 .pay-less {
     padding: 19px 0;
     text-align: center;
-    margin-bottom: 20px;
 
     &__text {
         padding: 28px 0;
@@ -128,11 +127,16 @@
 }
 
 // Предложения - deals
+.deals-wrapper {
+    background-color: #f3f3f3;
+}
+
 .deals {
-    margin-top: 10px;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
+    padding-bottom: 30px;
 
     &__block-text-wrapper {
         @include flex-positioning(center, center);
@@ -205,7 +209,7 @@
         }
     }
 
-    &__block2-text {        
+    &__block2-text {
         margin: 30px 0 448px 0;
     }
 
@@ -243,6 +247,157 @@
     &__slider-pagination {}
 }
 
+// Products 
+
+.products {
+
+    &__nav {
+        @include text(1rem, 700, $t-dark6, none, null, uppercase);
+        @include flex-positioning(center);
+    }
+
+    &__nav-menu {
+        text-align: center;
+    }
+
+    &__nav-menu-link {
+        display: block;
+        @include text(1rem, 700, $t-gray2, none, null, uppercase);
+        margin-top: 19px;
+
+        &_active {
+            border-bottom: 2px solid $t-dark6;
+            color: $t-dark6;
+            padding-bottom: 9px;
+        }
+
+        &:hover {
+            color: $t-dark6;
+        }
+    }
+
+    &__items {
+        margin-top: 29px;
+        display: grid;
+        grid-row-gap: 46px;
+    }
+
+    &__show-more-wrapper {
+        @include flex-positioning(center);
+        margin-top: 50px;
+    }
+
+    &__show-more {
+        @include text(14px, 700, $t-dark5, none, null, uppercase);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Карточка продукта
+
+.product {
+    max-width: 280px;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding-bottom: 13px;
+    }
+
+    &__img {
+        display: block;
+        text-decoration: none;
+        background-color: $bg-gray2;
+        width: 280px;
+        height: 364px;
+
+        &_footer {
+            max-width: 130px;
+            max-height: 169px;
+        }
+    }
+
+    &__text {
+        @include flex-positioning(space-between);
+        margin-top: 24px;
+    }
+
+    &__text-h-wrapper {}
+
+    &__text-h {
+        @include text(0.8125rem, 400, $t-dark6, null, null, null);
+
+        &:first-child {
+            margin-bottom: 9px;
+        }
+
+        &_footer {
+            color: $gray4;
+        }
+    }
+
+    &__text-price {
+        @include text(0.9375rem, 700, $t-dark7, null, null, uppercase);
+        &_footer {
+            color: $white;
+        }        
+    }
+
+    &__hover {
+        visibility: hidden;
+    }
+
+    &__hover-block1 {        
+        border: 2px solid $t-dark6;
+        padding: 12px 25px;
+    }
+
+    &__hover-block1-btn {
+        @include text(0.875rem, 700, $t-dark6, none, null, uppercase);
+
+        &:first-child {
+            border-right: 2px solid $t-dark6;
+            padding-right: 24px;
+        }
+
+        &:last-child {
+            padding-left: 24px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__hover-block2 {
+        margin-top: 8px;
+        @include flex-positioning(space-between);
+    }
+
+    &__hover-block2-btn {
+        font-style: italic;
+        @include text(0.8125rem, 400, $t-dark3, none);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:hover &__hover {
+        visibility: visible;
+    }
+
+    &_sm {
+        display: none;
+    }
+
+    &_lg {
+        display: none;
+    }
+}
+
 @include breakpoint(xs) {
     .deals {
         &__slider-pagination {
@@ -276,7 +431,7 @@
     }
 
     .deals {
-        margin-top: 20px;
+        padding-top: 20px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 266px 154px 154px;
         grid-gap: 20px;
@@ -325,6 +480,65 @@
             margin: 0;
         }
     }
+
+    .products {
+        margin-top: 51px;
+
+        &__nav-menu {
+            @include flex-positioning(null, center);
+            margin: 0 -35px;
+        }
+
+        &__nav-menu-link {
+            padding-bottom: 9px;
+            border-bottom: 2px solid transparent;
+            margin: 0 35px;
+
+            &_active {
+                border-bottom: 2px solid $t-dark6;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $t-dark6;
+            }
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;            
+        }
+
+        &__show-more-wrapper {            
+            margin-top: 75px;
+        }
+    }
+
+    .product {
+        max-width: 228px;
+
+        &__img {
+            width: 228px;
+            height: 296px
+        }
+
+        &__hover-block1 {
+            padding: 12px 10px;
+        }
+
+        &__hover-block1-btn {           
+            &:first-child {                
+                padding-right: 10px;
+            }
+
+            &:last-child {
+                padding-left: 15px;
+            }           
+        }
+
+        &_sm {
+            display: block;
+        }
+    }
 }
 
 
@@ -367,7 +581,56 @@
     }
 
     .deals {
-        margin-top: 60px;
+        padding-top: 60px;
         grid-template-rows: 430px 250px 250px;
+
+        &__main-h2 {
+            font-size: 2.5rem;
+        }
+
+        &__deal-name {
+            font-size: 1.5625rem;
+        }
+    }
+
+    .products {
+
+        &__items {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 30px;
+        }
+    }
+
+    .product {
+        max-width: 270px;
+
+        &__img {
+            width: 270px;
+            height: 351px
+        }
+
+        &__hover-block1 {        
+            border: 2px solid $t-dark6;
+            padding: 12px 0px;
+        }
+    
+        &__hover-block1-btn {            
+    
+            &:first-child {                
+                padding: 0 24px;
+            }
+    
+            &:last-child {
+                padding-left: 0 24px;
+            }
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &_lg {
+            display: block;
+        }
     }
 }
