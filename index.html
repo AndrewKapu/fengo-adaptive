@@ -76,7 +76,7 @@
                 </div>
                 <!-- Меню для больших экранов -->
                 <nav class="header__main-nav container">
-                    <a href="#" class="logo header__main-nav-logo">
+                    <a href="#" id="home" class="logo header__main-nav-logo">
                         <img class="logo__img" src="img/logo-img.svg" alt="logo">
                         <h2 class="logo__heading">FENGO</h2>
                     </a>
@@ -436,11 +436,11 @@
             <footer class="footer container">
                 <div class="footer__cols">
                     <!-- Первая колонка -->
-                    <div class="footer__col footer__col1">
-                        <div class="footer__block-header">
-                            <h4 class="footer__heading"> ABOUT FENGO SHOP</h4>
-                        </div>
-                        <div class="footer__col1-block1">
+                    <div class="footer__col-block footer__col1">
+                        <div class="footer__col1-block footer__col1-block1">
+                            <div class="footer__block-header">
+                                <h4 class="footer__heading"> ABOUT FENGO SHOP</h4>
+                            </div>
                             <img class="footer__img footer__img_block1">
                             <p class="footer__text">Morbi pretium odio in
                                 dapibus varius. Integer
@@ -454,7 +454,7 @@
                             <a href="#" class="more-btn footer__more-btn">read more<i
                                     class="fas fa-chevron-right more-btn__arrow-right arrow-right"></i></a>
                         </div>
-                        <div class="footer__col1-block2">
+                        <div class="footer__col1-block footer__col1-block2">
                             <div class="footer__col1-block2-header">
                                 <div class="footer__block-header">
                                     <h4 class="footer__heading"> From the Blog</h4>
@@ -471,7 +471,7 @@
                             <h4 class="footer__heading footer__heading_block2">Pellentesque vehicula urna
                                 purus</h4>
                         </div>
-                        <div class="footer__col1-block3">
+                        <div class="footer__col1-block footer__col1-block3">
                             <div class="footer__block-header">
                                 <h4 class="footer__heading">QUICK CONTACT</h4>
                             </div>
@@ -487,7 +487,7 @@
                                         class="fas fa-chevron-right more-btn__arrow-right arrow-right"></i></button>
                             </form>
                         </div>
-                        <div class="footer__col1-block4">
+                        <div class="footer__col1-block footer__col1-block4">
                             <form class="footer__col1-block4-form" action="#">
                                 <input type="email" class="footer__input" placeholder="enter your email">
                                 <button class="footer__col1-block4-btn" type="submit">
@@ -499,7 +499,7 @@
                     </div>
                     <!-- Вторая колонка -->
                     <div class="footer__col footer__col2">
-                        <div class="footer__col2-block1">
+                        <div class="footer__col2-block footer__col2-block1">
                             <div class="footer__block-header">
                                 <h4 class="footer__heading">Most favorite</h4>
                                 <div class="footer__slider-btns slider-btns">
@@ -541,7 +541,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer__col2-block2">
+                        <div class="footer__col2-block footer__col2-block2">
                             <div class="footer__block-header">
                                 <h4 class="footer__heading">twitter</h4>
                                 <a href="#" class="footer__btn">follow</a>
@@ -556,16 +556,17 @@
                                 <p class="footer__text">Vivamus id quam quis velit semper
                                     adipiscing nec in libero. Praesent
                                     quis lectus at justo ornare laoreet.
-                                    Proin luctus viverra <span class="footer__twitter-post-link">bit.ly/1byZ6QM</span>
+                                    Proin luctus viverra <a href="#"
+                                        class="footer__twitter-post-link">bit.ly/1byZ6QM</a>
                                 </p>
                                 <div class="footer__text footer__twitter-post-date">
                                     9 October 2019
                                 </div>
                                 <div class="footer__twitter-post-actions">
-                                    <span class="footer__text footer__twitter-post-actions-items"><i
-                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</span>
-                                    <span class="footer__text footer__twitter-post-actions-items"><i
-                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</span>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</a>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</a>
                                 </div>
                             </article>
                             <article class="footer__twitter-post">
@@ -577,20 +578,21 @@
                                 <p class="footer__text">Vivamus id quam quis velit semper
                                     adipiscing nec in libero. Praesent
                                     quis lectus at justo ornare laoreet.
-                                    Proin luctus viverra <span class="footer__twitter-post-link">bit.ly/1byZ6QM</span>
+                                    Proin luctus viverra <a href="#"
+                                        class="footer__twitter-post-link">bit.ly/1byZ6QM</a>
                                 </p>
                                 <div class="footer__text footer__twitter-post-date">
                                     9 October 2019
                                 </div>
                                 <div class="footer__twitter-post-actions">
-                                    <span class="footer__text footer__twitter-post-actions-items"><i
-                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</span>
-                                    <span class="footer__text footer__twitter-post-actions-items"><i
-                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</span>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-reply footer__twitter-post-actions-icons"></i>Reply</a>
+                                    <a href="#" class="footer__text footer__twitter-post-actions-items"><i
+                                            class="fas fa-retweet footer__twitter-post-actions-icons"></i>Retweet</a>
                                 </div>
                             </article>
                         </div>
-                        <div class="footer__col2-block3">
+                        <div class="footer__col2-block footer__col2-block3">
                             <div class="footer__block-header">
                                 <h4 class="footer__heading">facebook</h4>
                                 <a href="#" class="footer__btn">like</a>
@@ -609,16 +611,18 @@
                                         class="footer__img footer__img_facebook-person"></a>
                                 <a href="#" class="footer__col2-block3-facebook-person"><img
                                         class="footer__img footer__img_facebook-person"></a>
-                                <a href="#" class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
+                                <a href="#"
+                                    class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
                                         class="footer__img footer__img_facebook-person"></a>
-                                <a href="#" class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
+                                <a href="#"
+                                    class="footer__col2-block3-facebook-person footer__col2-block3-facebook-person_lg"><img
                                         class="footer__img footer__img_facebook-person"></a>
                             </div>
                         </div>
                     </div>
                     <!-- Третья колонка -->
                     <div class="footer__col footer__col3">
-                        <div class="footer__col3-block1">
+                        <div class="footer__col3-block footer__col3-block1">
                             <h4 class="footer__heading footer__heading_nav">INFORMATION</h4>
                             <nav>
                                 <ul class="footer__nav">
@@ -631,7 +635,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="footer__col3-block2">
+                        <div class="footer__col3-block footer__col3-block2">
                             <h4 class="footer__heading footer__heading_nav">MY ACCOUNT</h4>
                             <nav>
                                 <ul class="footer__nav">
@@ -644,7 +648,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="footer__col3-block3">
+                        <div class="footer__col3-block footer__col3-block3">
                             <h4 class="footer__heading footer__heading_nav">CUSTOMER SERVICE</h4>
                             <nav>
                                 <ul class="footer__nav">
@@ -662,18 +666,18 @@
                 </div>
                 <div class="footer__external">
                     <div class="footer__external-payment">
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card1.png"
-                                alt="photo"></a>
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card2.png"
-                                alt="photo"></a>
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card3.png"
-                                alt="photo"></a>
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card4.png"
-                                alt="photo"></a>
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card5.png"
-                                alt="photo"></a>
-                        <a href="#" class="footer__external-payment-link"><img src="img/credit-card6.png"
-                                alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card1.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card2.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card3.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card4.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card5.png" alt="photo"></a>
+                        <a href="#" class="footer__external-payment-link"><img class="footer__external-payment-img"
+                                src="img/credit-card6.png" alt="photo"></a>
                     </div>
                     <div class="footer__external-social">
                         <a href="#" class="footer__external-social-link"><i class="fab fa-facebook-f"></i></a>
@@ -691,7 +695,9 @@
                     All Rights Reserved.
                 </p>
                 <div class="footer__slider-btn-wrapper">
-                    <a href="#fengo" class="footer__slider-btn footer__slider-btn_external slider-btn"><i
+                    <a href="#fengo" class="footer__slider-btn footer__slider-btn_external footer__slider-btn_lg-no slider-btn"><i
+                            class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right footer__arrow-right_external"></i></a>
+                    <a href="#home" class="footer__slider-btn footer__slider-btn_external footer__slider-btn_lg slider-btn"><i
                             class="fas fa-chevron-right slider-btn__arrow-right arrow-right footer__arrow-right footer__arrow-right_external"></i></a>
                 </div>
             </footer>

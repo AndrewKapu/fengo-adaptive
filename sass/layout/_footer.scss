@@ -7,11 +7,19 @@
 .footer {
     padding-top: 50px;
 
+    &__col1-block,
+    &__col2-block,
+    &__col3-block {
+        padding: 40px 0;
+        border-bottom: 1px dashed $gray4;
 
-    &__col1 {}
+        &:first-child {
+            padding-top: 0;
+        }
+    }
 
-    &__col1-block1 {
-        padding-bottom: 19px;
+    &__col1-block3 {
+        padding-top: 40px;
     }
 
     &__heading {
@@ -59,6 +67,10 @@
             height: 60px;
             border: 5px solid $dark8;
         }
+
+        &:hover {
+            box-shadow: 0px 0px 3px 3px grey;
+        }
     }
 
     &__text {
@@ -71,7 +83,7 @@
 
     &__btn {
         display: block;
-        padding: 6px 11px;
+        padding: 5px 11px 6px 11px;
         @include text(0.75rem, 400, $gray8, none, null, uppercase);
         border: 1px solid $gray8;
         box-sizing: border-box;
@@ -114,6 +126,10 @@
             border-radius: 23px;
             transform: rotate(-90deg) !important;
         }
+
+        &_lg {
+            display: none;
+        }
     }
 
     // Продукт
@@ -123,6 +139,9 @@
 
     &__arrow-right {
         line-height: 0px;
+        &:first-child {
+            margin-top: 1px;
+        }
 
         &_block4 {
             @include text(1.0625rem, null, $gray4);
@@ -160,7 +179,7 @@
     }
 
     &__col1-block4 {
-        margin-top: 40px;
+        //margin-top: 40px;
     }
 
     &__col1-block4-form {
@@ -188,6 +207,10 @@
         &:first-child {
             margin-right: 20px;
         }
+
+        &:hover {
+            box-shadow: none;
+        }
     }
 
     &__twitter-post {
@@ -204,7 +227,12 @@
     }
 
     &__twitter-post-link {
+        text-decoration: none;
         color: $bg-gray2;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__twitter-post-date {
@@ -212,12 +240,15 @@
         margin: 18px 0 10px 0;
     }
 
-    &__twitter-post-actions {}
 
     &__twitter-post-actions-items {
 
         &:first-child {
             margin-right: 19px;
+        }
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 
@@ -270,13 +301,17 @@
     &__external-payment-link {
         display: block;
         margin-right: auto;
+
+    }
+
+    &__external-payment-img {
+
+        &:hover {
+            box-shadow: 0px 0px 3px 3px grey;
+        }
     }
 
     &__external-social {
-        // display: grid;
-        // grid-column-gap: 5px;
-        // grid-row-gap: 9px;
-        // grid-template-columns: repeat(auto-fill, 40px);
         @include flex-positioning($flex-flow: row wrap);
         margin: 0 -2px;
     }
@@ -290,6 +325,10 @@
         @include flex-positioning(center, center);
         margin: 0 2px;
         margin-bottom: 9px;
+
+        &:hover {
+            box-shadow: 0px 0px 3px 3px grey;
+        }
     }
 }
 
@@ -311,6 +350,7 @@
         }
 
         &__col3 {
+            min-width: 235px;
             padding-left: 12px;
         }
 
@@ -351,10 +391,25 @@
                 width: 180px;
                 height: 180px;
             }
+
+            &_block2 {
+                width: 50%;
+            }
         }
 
         &__col1-block1 {
             padding-bottom: 84px;
+        }
+
+        &__slider-btn {
+
+            &_lg {
+                display: flex;
+            }
+
+            &_lg-no {
+                display: none;
+            }
         }
 
         &__col2-block3-facebook {
@@ -366,6 +421,14 @@
             &_lg {
                 display: block;
             }
+        }
+
+        &__external-payment {
+            margin: 0 -7px;
+        }
+
+        &__external-payment-link {
+            margin: 0 7px;
         }
     }
 }
